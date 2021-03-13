@@ -5,24 +5,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Веб 2</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-
+		
 	</header>
-	<main>
-		<form action="#">
-			<label for="name">Имя:</label>
-			<input type="text" id="name" name="name">
-			<label for="email">Email:</label>
-			<input type="email" name="email" id="email">
-		</form>
-	</main>
 	<aside>
 		
 	</aside>
+	<main>
+		<form action="#">
+			<p>
+				<label for="name">Имя:</label>
+				<input type="text" id="name" name="name">
+			</p>
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email">
+			</p>
+			<p class="max-width">
+				<label for="message">Сообщение:</label>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
+			</p>
+			<p class="max-width"><button type="submit">Отправить</button></p>
+		</form>
+	</main>
 	<footer>
-
+		<p>(с) Все права защищены. Защита обеспечена самим Богом.</p>
 	</footer>
 </body>
 </html>

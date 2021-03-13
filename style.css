@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: blueviolet;
+	background: fixed 
+				linear-gradient(21deg, #dd03e4, #5611ec) 
+				no-repeat 
+				center 
+				center;
+	background-size: cover;
+	color: white;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+form p {
+	margin: 0;
+}
+
+form label {
+	display: block;
+}
+
+.max-width {
+	grid-column: 1 / 3;
+}
