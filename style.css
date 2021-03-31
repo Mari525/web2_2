@@ -1,9 +1,7 @@
 * {
 	box-sizing: border-box;
-}
-
-html {
-	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -15,32 +13,39 @@ body {
 				center;
 	background-size: cover;
 	color: white;
+	font-family: Verdana, sans-serif;
 
-	margin: 0;
-	height: 100%;
 	min-width: 320px;
 
 	display: grid;
 	gap: 20px;
-	/* grid-template-columns: 300px 1fr; */
 
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-areas: 
 	"hd hd hd hd hd hd hd hd hd hd"
-	"as mn mn mn mn mn mn mn mn mn"
+	"as as mn mn mn mn mn mn mn mn"
 	"ft ft ft ft ft ft ft ft ft ft";
+}
+
+h2 {
+	margin-bottom: 20px;
 }
 
 header {
 	height: 50px;
 	top: 0;
+
 	background-color: blueviolet;
 	text-align: center;
+
 	grid-area: hd;
 }
 
-header p {
-	margin: 0;
+header,
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 aside {
@@ -57,12 +62,11 @@ main {
 	grid-area: mn;
 	display: flex;
 	flex-direction: column;
-
 }
 
-section.form {
-	max-width: 600px;
-	margin: 0 auto;
+.form {
+	max-width: 400px;
+	margin: 0 auto 20px;
 }
 
 form {
@@ -71,18 +75,26 @@ form {
 	grid-gap: 20px;
 }
 
-form p {
-	margin: 0;
-}
-
 form label {
 	display: block;
 	margin-bottom: 20px;
 }
 
 input,
-textarea {
+textarea,
+button {
 	width: 100%;
+	padding: 5px 10px;
+
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+::placeholder {
+	color: #ffffff;
 }
 
 .max-width {
@@ -97,7 +109,6 @@ textarea {
 	grid-auto-rows: 200px;
 	grid-auto-flow: dense;
 	gap: 10px;
-
 }
 
 .gallery li {
